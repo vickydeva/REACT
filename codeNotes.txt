@@ -1,0 +1,23 @@
+// React elements.. using core react
+
+const heading = React.createElement("h1", { id: "heading" }, "namaste react"); // ==> react element in the form of objects.
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading); //==> converts the react elements into html and put in the id tag.
+console.log(heading);
+
+// ... React elements.. using JSX - syntax ...
+
+const js_heading = <h1 id="headjsx">namaste react from jsx</h1>; // ==> looks like html syntax but not the html in javascript or react.
+console.log(js_heading);
+root.render(js_heading);
+
+// React functional component
+const Title = () => <h1 id="title">this is the title component</h1>;
+
+const Head = () => (
+  <div id="container">
+    <Title />
+    <h1 className="header">headding component</h1>
+  </div>
+);
+root.render(<Head />);
