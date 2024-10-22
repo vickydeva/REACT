@@ -21,3 +21,8 @@ const Head = () => (
   </div>
 );
 root.render(<Head />);
+
+---------------
+# src - folder 
+---------------
+ - Generally all the coding files are kept in the src folder.
